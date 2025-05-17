@@ -1,0 +1,184 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #004466, #1D41D5); /* darker blue */
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.centered-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.hero h1 {
+  font-size: 2.8rem;
+}
+.hero span {
+  color: #ffe082;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.btn {
+  display: inline-block;
+  margin: 15px 10px 0;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #2196f3;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background-color: #f1f1f1;
+}
+.btn.dark {
+  background-color: #333;
+  color: #fff;
+}
+.btn.dark:hover {
+  background-color: #111;
+}
+
+/* Section Layouts */
+.section {
+  padding: 80px 20px;
+}
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.section.dark {
+  background-color: #222;
+  color: #eee;
+}
+
+/* About Me Bullet Fix */
+.about-points {
+  list-style: none;
+  padding-left: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-points li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  padding-left: 10px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.skills span {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Experience Cards */
+.experience-card {
+  background: #333;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.experience-card h3 {
+  color: #ffe082;
+}
+.experience-card p {
+  margin-top: 8px;
+}
+.experience-card strong {
+  color: #00bcd4;
+}
+
+/* Contact */
+#contact a {
+  color: #00bcd4;
+}
+#contact i {
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
