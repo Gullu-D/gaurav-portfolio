@@ -182,3 +182,41 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
 }
+
+/* Certifications Section */
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.cert-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.cert-item img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.cert-item a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #00bcd4;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.cert-item a:hover {
+  background-color: #0097a7;
+}
