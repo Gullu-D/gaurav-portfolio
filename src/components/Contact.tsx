@@ -6,9 +6,9 @@ export default function Contact() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section id="contact" ref={ref} className="section-reveal py-24 px-4 sm:px-6">
+    <section id="contact" ref={ref} aria-labelledby="contact-heading" className="section-reveal py-24 px-4 sm:px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+        <h2 id="contact-heading" className="text-3xl sm:text-4xl font-bold mb-4">
           Get In <span className="gradient-text">Touch</span>
         </h2>
         <p className="text-gray-400 mb-10 max-w-lg mx-auto">
@@ -30,7 +30,7 @@ export default function Contact() {
           <ContactLink href={profile.social.linkedin} icon={<Linkedin size={20} />} label="LinkedIn" />
         </div>
 
-        <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray-500">
+        <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray-400">
           <MapPin size={14} />
           {profile.location}
         </div>

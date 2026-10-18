@@ -6,9 +6,9 @@ export default function Certifications() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section ref={ref} className="section-reveal py-24 px-4 sm:px-6">
+    <section id="certifications" ref={ref} aria-labelledby="certifications-heading" className="section-reveal py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">
+        <h2 id="certifications-heading" className="text-3xl sm:text-4xl font-bold mb-12">
           <span className="gradient-text">Certifications</span>
         </h2>
 
@@ -25,7 +25,7 @@ export default function Certifications() {
                 />
                 <div>
                   <p className="text-sm font-medium text-gray-200 leading-snug">{cert.title}</p>
-                  <p className="text-xs text-gray-500 mt-1">{cert.issuer}</p>
+                  <p className="text-xs text-gray-400 mt-1">{cert.issuer}</p>
                 </div>
               </div>
             </div>

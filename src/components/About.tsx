@@ -6,9 +6,9 @@ export default function About() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section id="about" ref={ref} className="section-reveal py-24 px-4 sm:px-6">
+    <section id="about" ref={ref} aria-labelledby="about-heading" className="section-reveal py-24 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">
+        <h2 id="about-heading" className="text-3xl sm:text-4xl font-bold mb-12">
           About <span className="gradient-text">Me</span>
         </h2>
 

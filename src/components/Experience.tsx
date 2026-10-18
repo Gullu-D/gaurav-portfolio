@@ -6,9 +6,9 @@ export default function Experience() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section id="experience" ref={ref} className="section-reveal py-24 px-4 sm:px-6">
+    <section id="experience" ref={ref} aria-labelledby="experience-heading" className="section-reveal py-24 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">
+        <h2 id="experience-heading" className="text-3xl sm:text-4xl font-bold mb-12">
           Experience & <span className="gradient-text">Education</span>
         </h2>
 
@@ -29,12 +29,12 @@ export default function Experience() {
                 <div className="glass rounded-2xl p-6 flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
                     <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                    <span className="text-xs font-medium text-gray-500 whitespace-nowrap">
+                    <span className="text-xs font-medium text-gray-400 whitespace-nowrap">
                       {item.period}
                     </span>
                   </div>
                   <p className="text-sm text-violet-400 mb-1">{item.subtitle}</p>
-                  <p className="text-xs text-gray-500 mb-3">{item.location}</p>
+                  <p className="text-xs text-gray-400 mb-3">{item.location}</p>
                   {item.description.length > 0 && (
                     <ul className="space-y-1">
                       {item.description.map((d) => (
