@@ -7,8 +7,10 @@ export function useReveal<T extends HTMLElement>() {
     const el = ref.current
     if (!el) return
 
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (prefersReduced) {
+    if (
+      typeof IntersectionObserver === 'undefined' ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
       el.classList.add('visible')
       return
     }
@@ -20,7 +22,7 @@ export function useReveal<T extends HTMLElement>() {
           observer.unobserve(el)
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.05, rootMargin: '0px 0px 150px 0px' },
     )
     observer.observe(el)
     return () => observer.disconnect()

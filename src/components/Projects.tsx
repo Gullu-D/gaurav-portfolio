@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { CheckCircle2, Github } from 'lucide-react'
 import { projects, type Project } from '../data/content'
 import { useReveal } from '../hooks/useReveal'
 
@@ -6,12 +6,12 @@ export default function Projects() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section id="projects" ref={ref} className="section-reveal py-24 px-4 sm:px-6">
+    <section id="projects" ref={ref} aria-labelledby="projects-heading" className="section-reveal py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+        <h2 id="projects-heading" className="text-3xl sm:text-4xl font-bold mb-4">
           Featured <span className="gradient-text">Projects</span>
         </h2>
-        <p className="text-gray-500 mb-12 max-w-xl">
+        <p className="text-gray-400 mb-12 max-w-xl">
           Real-world applications built from scratch — each with working code, tests, and documentation.
         </p>
 
@@ -67,7 +67,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <ul className="grid sm:grid-cols-2 gap-2 mb-6">
           {project.highlights.map((h) => (
             <li key={h} className="flex items-start gap-2 text-sm text-gray-400">
-              <ExternalLink size={14} className="mt-0.5 shrink-0 text-violet-400/60" />
+              <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-violet-400/60" />
               {h}
             </li>
           ))}

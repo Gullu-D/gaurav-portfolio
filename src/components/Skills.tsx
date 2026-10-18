@@ -5,9 +5,9 @@ export default function Skills() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section id="skills" ref={ref} className="section-reveal py-24 px-4 sm:px-6">
+    <section id="skills" ref={ref} aria-labelledby="skills-heading" className="section-reveal py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">
+        <h2 id="skills-heading" className="text-3xl sm:text-4xl font-bold mb-12">
           Technical <span className="gradient-text">Skills</span>
         </h2>
 

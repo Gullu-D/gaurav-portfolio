@@ -57,18 +57,21 @@ export default function Navbar() {
         <button
           className="md:hidden p-2 text-gray-400 hover:text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle navigation"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-nav"
+          aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
         >
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#0a0a1a]/95 backdrop-blur-xl border-b border-white/[0.06] px-4 pb-4">
+        <div id="mobile-nav" role="menu" className="md:hidden bg-[#0a0a1a]/95 backdrop-blur-xl border-b border-white/[0.06] px-4 pb-4">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
+              role="menuitem"
               onClick={() => setMobileOpen(false)}
               className="block py-3 text-gray-300 hover:text-white transition-colors"
             >

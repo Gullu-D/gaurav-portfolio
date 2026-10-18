@@ -32,7 +32,6 @@ export const projects: Project[] = [
     longDescription: 'A full-featured cybersecurity research tool that auto-detects name/email/domain inputs and runs concurrent modules over WebSocket for real-time streaming results. Includes an AI assistant grounded in scan data and a VPN/Tor anonymity demonstration with live world map visualization.',
     tech: ['Python', 'FastAPI', 'React', 'WebSockets', 'D3.js', 'Docker'],
     status: 'Completed',
-    github: 'https://github.com/Gullu-D',
     highlights: [
       'Async concurrent I/O — all data source modules fire simultaneously via asyncio',
       'Rate limiting on both REST and WebSocket endpoints for API protection',
@@ -46,7 +45,7 @@ export const projects: Project[] = [
     longDescription: 'A production-quality Retrieval-Augmented Generation application with a modular, testable pipeline: PDF ingestion, LangChain-powered chunking and embeddings, FAISS vector search, and grounded generation that explicitly refuses to hallucinate. 103-test offline suite.',
     tech: ['Python', 'FastAPI', 'React', 'TypeScript', 'LangChain', 'FAISS', 'OpenAI'],
     status: 'Completed',
-    github: 'https://github.com/Gullu-D',
+    github: 'https://github.com/Gullu-D/AI-Document-Search-RAG-Chatbot',
     highlights: [
       'Clean-architecture service layer over LangChain with swappable abstractions',
       '103 automated tests — fully offline, no real API calls',
@@ -60,7 +59,7 @@ export const projects: Project[] = [
     longDescription: 'An intelligent agent that parses natural-language banking queries, filters and categorizes transactions using Pandas, detects anomalies via statistical methods, and generates AI-grounded summaries — all with a fintech-style dashboard featuring KPI cards and Plotly charts.',
     tech: ['Python', 'Streamlit', 'Pandas', 'NumPy', 'Plotly', 'Pydantic', 'OpenAI'],
     status: 'Completed',
-    github: 'https://github.com/Gullu-D',
+    github: 'https://github.com/Gullu-D/banking-assistant-agent',
     highlights: [
       'Every financial calculation is deterministic — LLM never touches the numbers',
       'Statistical anomaly detection (outliers, duplicates, spending bursts)',
